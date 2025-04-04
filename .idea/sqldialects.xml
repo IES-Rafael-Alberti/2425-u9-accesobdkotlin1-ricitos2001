@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/main/kotlin/ejercicios/ejercicio_2/Main.kt" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/kotlin/ejercicios/ejercicio_3/Main.kt" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/src/main/kotlin/ejercicios/ejercicio_4/Main.kt" dialect="GenericSQL" />
   </component>
 </project>
