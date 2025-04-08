@@ -54,11 +54,19 @@ class Inicio() {
 
     fun eliminarPedido(connection: Connection?) {
         if (connection != null) {
-            val query = "delete from Pedido where id = select idPedido from LineaPedido where id = ?"
-            val sentencia: PreparedStatement = connection.prepareStatement(query)
-            sentencia.setInt(1, 4)
-            sentencia.executeUpdate()
-            sentencia.close()
+            // val query delete from LineaPedido and pedido where id
+            var query1 = "delete from LineaPedido where idPedido = (select id from pedido where id = ?)"
+            var sentencia1: PreparedStatement = connection.prepareStatement(query1)
+            sentencia1.setInt(1, 3)
+            sentencia1.executeUpdate()
+            sentencia1.close()
+
+            val query2 = "delete from Pedido where id = ?"
+            val sentencia2 = connection.prepareStatement(query2)
+            sentencia2.setInt(1, 3)
+            sentencia2.executeUpdate()
+            sentencia2.close()
+
         }
     }
 }
