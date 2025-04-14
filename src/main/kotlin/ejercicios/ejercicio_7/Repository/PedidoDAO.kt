@@ -1,11 +1,11 @@
-package org.example.ejercicios.ejercicio_7
+package org.example.ejercicios.ejercicio_7.Repository
 
 import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.SQLException
 
 class PedidoDAO(
-    private val c: Connection
+    private val c: Connection,
 ) {
     fun insertar(pedido: Pedido) {
         try {

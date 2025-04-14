@@ -1,4 +1,4 @@
-package org.example.ejercicios.ejercicio_7
+package org.example.ejercicios.ejercicio_7.Repository
 
 import java.sql.Connection
 import java.sql.DriverManager

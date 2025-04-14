@@ -1,9 +1,10 @@
-package org.example.ejercicios.ejercicio_7
+package org.example.ejercicios.ejercicio_7.Repository
 
+import org.example.ejercicios.ejercicio_7.Interfaces.IPedidoRepository
 import java.sql.Connection
 
 class PedidoRepository(
-    c: Connection
+    c: Connection,
 ) : IPedidoRepository {
     private val pedidoDAO = PedidoDAO(c)
     private val lineaPedidoDAO = LineaDAO(c)
